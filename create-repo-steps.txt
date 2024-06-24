@@ -13,3 +13,8 @@
 7. update readme.txt file, go to control single quote, command prompt, 
 click on snake icon and click of + ie it means add and go to cmd prompt at the bottom ie ctrl single quote and 
 run git commit -m "comment ", git push origin main
+
+8. how to commit multiple files in one command, see below: 
+C:\pk\gcp\genai\pkagent>git add . && git commit -m "-" && git push origin main
+
+
