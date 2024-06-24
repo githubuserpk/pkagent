@@ -1,0 +1,15 @@
+1. create a repo in github called pkagent
+
+2. go to command prompt c drive c:\pk\gcp\genai
+
+3. Dont create a folder called pkagent
+
+4. run git clone https://github.com/githubuserpk/pkagent.git from c:\pk\gcp\genai
+
+5. cd c:\pk\gcp\genai\pkagent
+
+6. run code .
+
+7. update readme.txt file, go to control single quote, command prompt, 
+click on snake icon and click of + ie it means add and go to cmd prompt at the bottom ie ctrl single quote and 
+run git commit -m "comment ", git push origin main
