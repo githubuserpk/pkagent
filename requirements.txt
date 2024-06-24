@@ -1,0 +1,6 @@
+python-dotenv
+google-cloud-aiplatform
+google-generativeai
+groq
+tavily-python
+
