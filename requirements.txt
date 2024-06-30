@@ -3,4 +3,26 @@ google-cloud-aiplatform
 google-generativeai
 groq
 tavily-python
+langchain
 
+streamlit
+pandas
+numpy
+groq
+langchain_community
+langchain_groq
+yfinance
+plotly
+langchain_core
+nbformat>=4.2.0
+ipython
+kaleido
+
+#huggingface libraries
+transformers 
+datasets 
+evaluate 
+accelerate
+torch
+tensorflow
+tf-keras

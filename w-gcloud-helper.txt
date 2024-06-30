@@ -1,0 +1,15 @@
+1. how to download a file from gcloud vm to local laptop
+cloudshell download $HOME/openapi2-functions.yaml
+
+2. when a file is uploaded to gcs bucket, i want to create a notification to create a pub/sub topic called new-docs
+and i want to :
+create a new service account called pubsub-cloud-run-invoker which Pub/Sub will use to trigger the Cloud Run services
+
+gsutil notification create -t new-docs -f json -e OBJECT_FINALIZE gs://$GOOGLE_CLOUD_PROJECT-upload
+gcloud iam service-accounts create pubsub-cloud-run-invoker --display-name "PubSub Cloud Run Invoker"
+
+how to get the project number and project id ?
+gcloud projects list
+
+
+
