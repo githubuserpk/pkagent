@@ -26,3 +26,9 @@ accelerate
 torch
 tensorflow
 tf-keras
+
+langchain-openai
+
+ipykernel
+matplotlib
+tqdm
