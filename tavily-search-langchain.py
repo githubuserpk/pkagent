@@ -5,7 +5,8 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain.tools.tavily_search import TavilySearchResults
 
 # set up API key
-os.environ["TAVILY_API_KEY"] = "..."
+
+apikey=os.environ.get('TAVILY_API_KEY') 
 
 # set up the agent
 llm = ChatOpenAI(model_name="gpt-4", temperature=0.7)
