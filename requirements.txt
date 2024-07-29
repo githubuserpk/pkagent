@@ -32,3 +32,12 @@ langchain-openai
 ipykernel
 matplotlib
 tqdm
+
+
+crewai
+crewai_tools
+youtube-transcript-api
+yt_dlp==2023.11.14 
+youtube-transcript-api==0.6.1
+
+langchain_google_genai
