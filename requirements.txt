@@ -41,3 +41,9 @@ yt_dlp==2023.11.14
 youtube-transcript-api==0.6.1
 
 langchain_google_genai
+beautifulsoup4
+unstructured
+sec-api
+
+langchain_community==0.2.10
+langchain-cli
