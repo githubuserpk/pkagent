@@ -39,6 +39,8 @@ https://cloud.google.com/blog/products/serverless/introducing-cloud-run-volume-m
 youtube video: 
 https://www.youtube.com/watch?v=8pu2fVQbbNs
 
+google cloud documentation: 
+https://cloud.google.com/run/docs/configuring/services/cloud-storage-volume-mounts#console
 
 
 
