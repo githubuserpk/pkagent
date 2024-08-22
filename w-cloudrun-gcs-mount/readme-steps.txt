@@ -26,10 +26,16 @@ create a bucket in us-central1: bkt-pkdeltaai-06-uc1
 
 
 Summary - my observations: 
-This is an amazing new feature launched by google in preview on 21 aug 2024.
+
+
+This is an amazing new feature launched by google in preview on mar 2024.
 It helps us to de-couple the file storage from the container and move it to GCS as file storage or NFS 
 Behind the scenes, cloud run uses GCS FUSE 
 So, it means you can edit your static html files without having to rebuild the container.  This is a very cool feature 
+
+Blog: 
+https://cloud.google.com/blog/products/serverless/introducing-cloud-run-volume-mounts?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_mao_storage_8pu2fvqbbns_ServerlessExpeditions_040424&utm_content=description
+
 
 
 
