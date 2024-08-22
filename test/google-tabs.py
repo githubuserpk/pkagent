@@ -5,41 +5,8 @@ import plotly.express as px
 from datetime import datetime, timedelta
 from scipy import interpolate
 
-stock_options = {
-    "Select": "Select",
-    "Google": "GOOG",
-    "Apple": "AAPL",
-    "Microsoft": "MSFT",
-    "Meta": "META",
-    "Gold": "GC=F"  # Assuming you mean gold futures
-}
-
-
-
-# Create a list of stock names for the selectbox
-stock_names = list(stock_options.keys())
-
-# Create the selectbox
-selected_stock = st.selectbox(
-    'Select the stock from your Portfolio?',
-    stock_names
-)
-
-# Get the ticker symbol based on the selected stock
-option = stock_options[selected_stock]
-
-
-#portfolio_start_amount str '£1000'
-st.write('Portfolio investment: £1000')
-st.write('Start date: 1 Jul 2024')
-
-
-
 def plot_stock_price(ticker, start_date, end_date, interval):
     """Plots the stock price for the specified date range."""
-    
-    if ticker == "Select":
-        return None
     
     # Fetch stock data
     stock_data = yf.download(ticker, start=start_date, end=end_date + timedelta(days=1), interval=interval)
@@ -88,8 +55,7 @@ def plot_stock_price(ticker, start_date, end_date, interval):
 st.title("Stock Price Viewer")
 
 # User input for ticker
-#ticker = st.text_input("Enter stock ticker (e.g., GOOGL):", "GOOGL")
-ticker = option
+ticker = st.text_input("Enter stock ticker (e.g., GOOGL):", "GOOGL")
 
 # Define date ranges and intervals
 date_ranges = {
@@ -110,7 +76,5 @@ for label, tab in zip(date_ranges.keys(), tabs):
         fig = plot_stock_price(ticker, start_date, end_date, interval)
         if fig:
             st.plotly_chart(fig)
-        elif fig is None:
-            st.write("Select an option.")
         else:
             st.write("Unable to display chart. Please try a different ticker or time range.")
