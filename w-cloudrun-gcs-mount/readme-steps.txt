@@ -36,6 +36,8 @@ So, it means you can edit your static html files without having to rebuild the c
 Blog: 
 https://cloud.google.com/blog/products/serverless/introducing-cloud-run-volume-mounts?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_mao_storage_8pu2fvqbbns_ServerlessExpeditions_040424&utm_content=description
 
+youtube video: 
+https://www.youtube.com/watch?v=8pu2fVQbbNs
 
 
 
