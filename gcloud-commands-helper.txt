@@ -12,4 +12,7 @@ how to get the project number and project id ?
 gcloud projects list
 
 
+2. command to get the list of permissions given to a user:
 
+gcloud projects get-iam-policy pkdeltaai-06   --flatten="bindings[].members"   --format='table(bindings.role)'   --filter="bindings.members:user:pkdeltaai.01@gmail.com"
+ROLE: roles/owner
