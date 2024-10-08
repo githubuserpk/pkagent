@@ -1,0 +1,6 @@
+# Config file for toml 
+
+name = "toml_example"
+version = "1.0.0"
+website = "https://www.example.com" 
+
